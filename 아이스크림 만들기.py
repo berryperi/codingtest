@@ -34,8 +34,6 @@ def bfs(x, y):
             if 0<=nx<n and 0<=ny<m and graph[nx][ny] == 0:
                 q.append((nx, ny))
                 
-
-
     # 하나의 얼음 덩어리가 완성 되면 true
     return True            
 
@@ -44,7 +42,5 @@ for i in range(n):
     for j in range(m):
         if bfs(i, j) == True: # 완성된 아스크림이 true라면 ice 카운터 증가
             ice += 1   # 아이스크림 갯수 카운트
-        
-
         
 print(ice)
