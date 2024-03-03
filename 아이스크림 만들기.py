@@ -44,3 +44,4 @@ for i in range(n):
             ice += 1   # 아이스크림 갯수 카운트
         
 print(ice)
+
