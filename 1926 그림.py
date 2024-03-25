@@ -19,9 +19,10 @@ def bfs(graph, a, b):
         x, y = queue.popleft()
         
         for i in range(4):
+            
             nx = x + dx[i]
             ny = y + dy[i]
-            # 이동한 위치가 그래프 범위를 벗어나면 무시
+
             if nx < 0 or nx >= n or ny < 0 or ny >= m:
                 continue
 
